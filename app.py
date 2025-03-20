@@ -27,9 +27,10 @@ if st.checkbox("Show raw data"):
     st.write(df.head())
 
 st.subheader("Car Price Distribution")
-fig = px.histogram(df, x="price", nbins=30, color_discrete_sequence=["orange"], title="Distribution of Car Prices")
+fig = px.histogram(df, x="price", nbins=50, color_discrete_sequence=["orange"], title="Distribution of Car Prices")
 st.plotly_chart(fig)
 
 st.subheader("Mileage vs Price")
-fig = px.scatter(df, x="odometer", y="price", color_discrete_sequence=["green"], title="Mileage vs Price")
+fig = px.scatter(df, x="odometer", y="price", color_discrete_sequence=["green"], title="Mileage vs Price"
+                 opacity=0.5)
 st.plotly_chart(fig)
