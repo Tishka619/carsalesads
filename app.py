@@ -31,6 +31,6 @@ fig = px.histogram(df, x="price", nbins=50, color_discrete_sequence=["orange"], 
 st.plotly_chart(fig)
 
 st.subheader("Mileage vs Price")
-fig = px.scatter(df, x="odometer", y="price", color_discrete_sequence=["green"], title="Mileage vs Price"
+fig = px.scatter(df, x="odometer", y="price", color_discrete_sequence=["green"], title="Mileage vs Price",
                  opacity=0.5)
 st.plotly_chart(fig)
